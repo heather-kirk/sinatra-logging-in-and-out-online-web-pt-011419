@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
+    <%= if %>
+    <a href="/"></a>
+    <% else %>
     <a href="/sessions/logout">Log Out</a>
-
+    <% end %>
+    <% end %>
   </body>
 </html>
