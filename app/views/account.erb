@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
-    <%= if %>
+    <%= if self.is_logged_in? %>
+    <%= self.current_user.username %>
+    <%= self.current_user.balance %>
     <a href="/"></a>
     <% else %>
     <a href="/sessions/logout">Log Out</a>
